@@ -78,9 +78,7 @@ Two common techniques were studied:
 
 ### Standardization — Z-score
 
-\[
-Z = rac{X-\mu}{\sigma}
-\]
+
 
 Standardization transforms the data using its mean and standard deviation.
 
@@ -88,7 +86,7 @@ Standardization transforms the data using its mean and standard deviation.
 
 ### Important Observation
 
-Feature scaling did not produce a meaningful improvement in the performance of ordinary Linear Regression in the experiment.
+Feature scaling did not produce a meaningful improvement in the performance of ordinary Univariate Linear Regression in the experiment.
 
 This demonstrates that feature scaling is **algorithm-dependent**.
 
@@ -100,7 +98,7 @@ It is generally more important for algorithms that depend on **distance or featu
 
 ### Key Learning
 
-> Feature scaling may have little effect on ordinary Linear Regression but can be much more important for distance-dependent and scale-sensitive algorithms.
+> Feature scaling may have little effect on ordinary Univariate Linear Regression but can be much more important for distance-dependent and scale-sensitive algorithms.
 
 ---
 
@@ -242,7 +240,7 @@ Data visualization played a key role in understanding relationships between vari
 Univariate Linear Regression provides a simple baseline for understanding how one feature can be used to predict a continuous target.
 
 ### Feature Scaling
-Feature scaling is algorithm-dependent. It may have little effect on ordinary Linear Regression but can be important for distance-dependent algorithms.
+Feature scaling is algorithm-dependent. It may have little effect on ordinary Univariate Linear Regression but can be important for distance-dependent algorithms.
 
 ### Outlier Treatment
 Different methods can produce different results. Outliers should be investigated rather than automatically removed.
@@ -271,3 +269,5 @@ The analysis also highlighted an important principle: **outliers are not necessa
 Feature scaling was also examined, and the experiment showed that its effect depends on the machine-learning algorithm. While it did not meaningfully improve ordinary Linear Regression, feature scaling can be much more important for **distance-dependent algorithms such as KNN and K-Means**, where differences in feature magnitude directly affect distance calculations.
 
 > **Overall Takeaway:** Good machine learning starts with understanding the data. Visualization, thoughtful variable selection, appropriate outlier treatment, and algorithm-specific preprocessing choices are essential for building meaningful and reliable models.
+### Author
+Vidya Nayak
