@@ -159,9 +159,7 @@ Instead of removing extreme observations, values beyond selected limits are repl
 
 The 3-Sigma method identifies observations that lie more than three standard deviations away from the mean.
 
-\[
-\mu-3\sigma \leq X \leq \mu+3\sigma
-\]
+
 
 Values outside this range were considered potential outliers.
 
